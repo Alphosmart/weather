@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <div>
+      <button onclick="getCurrentLocationWeather()">
+        Get Current Location Weather
+      </button>
+    </div>
+    <div>
+      <input type="text" id="locationInput" placeholder="Enter location" />
+      <button onclick="getWeatherByLocation()">Search</button>
+    </div>
+    <div id="weatherDisplay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
